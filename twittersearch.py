@@ -85,7 +85,7 @@ for tweet in tweets:
         if (n_non_ascii <= 2) and (n_hashtags <= 4):
             print_tweet(tweet)
 
-
+percent_verified, number_of_tweets = number_of_verfied_users(tweets)
 print("Out of", number_of_tweets, "tweets,",
         percent_verified, "% were from verified users")
 

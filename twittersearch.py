@@ -79,7 +79,7 @@ tweets = api.search_30_day(environment_dev, keyword)
 percent_verified, number_of_tweets = number_of_verfied_users(tweets)
 
 for tweet in tweets:
-    if (tweet.text[0:2] != "RT") and (tweet.text[0:1] != "@"):
+    if (tweet.text[0:2] != "RT"):
         n_non_ascii = count_non_ascii(tweet)
         n_hashtags = count_hashtags(tweet)
         if (n_non_ascii <= 2) and (n_hashtags <= 4):
